@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> FAYE Dethie Developpeur Front-end </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <input type="checkbox" id="menu" name="">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="fa fa-user-o"></span>Tableau de bord</h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="" class="active"><span class="fa fa-home"></span><span>Accueil </span></a>
+                </li>
+                <li>
+                    <a href="cv-faye-dethie.html"><span class="fa fa-th-large"></span><span>Mon CV </span></a>
+                </li>
+                <li>
+                    <a href="portfolio.html"><span class="fa fa-book"></span><span> Mes réalsations </span></a>
+                </li>
+                <li>
+                    <a href=""><span class="fa fa-user-o"></span><span>A-propos</span></a>
+                </li>
+                <li>
+                    <a href="projet.html"><span class="fa fa-clipboard"></span><span>Projets</span></a>
+                </li>
+
+                <li>
+                    <a href=""><span class="fa fa-user"></span><span>Contacts</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="content">
+
+        <header>
+            <p><label for="menu"><span class="fa fa-bars"></span></label><span class="accueil"> <h1> <strong> FAYE Dethie Developpeur Full-stack </strong> </h1> </span></p>
+
+            <!-- <div class="search-wrapper">
+                <span class="fa fa-search"></span>
+                <input type="search" name="" placeholder="recherche" />
+            </div> -->
+
+            <div class="user-wrapper" id="dropdown">
+                <div>
+                    <h4><?php echo $data['pseudo']; ?></h4>
+                    <small> Profil </small>
+                </div>
+
+                <img src="images/pp.jpg" width="30" height="30" class="logo-admin">
+                <div class="dropdown-content">
+                    <p> <a href="landing.php"> Profil </a> </p>
+                    <p> <a href="deconnexion.php"> Déconnexion </a> </p>
+                </div>
+
+            </div>
+        </header>
+
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h2>+150</h2>
+                        <small>Follwers</small>
+                    </div>
+                    <div>
+                        <span class="fa fa-university"></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h2> +350 </h2>
+                        <small> abonnés</small>
+                    </div>
+                    <div>
+                        <span class="fa fa-graduation-cap"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h2> +5 ans </h2>
+                        <small> D'expériences </small>
+                    </div>
+                    <div>
+                        <span class="fa fa-flaskf"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h2>20k</h2>
+                        <small>Communauté</small>
+                    </div>
+                    <div>
+                        <span class="fa fa-group"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="composant">
+                <div class="ventes">
+                    <div class="case">
+                        <div class="header-case">
+                            <h2>Listes produits</h2>
+                            <button class="button">voir plus<span class="fa fa-arrow-right"></span></button>
+                        </div>
+                        <div class="body-case">
+                            <div class="tableau">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>First</td>
+                                            <td>Last</td>
+                                            <td>Handle</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td><span class="status-produit color-one"></span>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td><span class="status-produit color-two"></span>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Larry the Bird</td>
+                                            <td>@twitter</td>
+                                            <td><span class="status-produit color-three"></span>@twitter</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Larry the Bird</td>
+                                            <td>@twitter</td>
+                                            <td><span class="status-produit color-four"></span>@twitter</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Larry the Bird</td>
+                                            <td>@twitter</td>
+                                            <td><span class="status-produit color-five"></span>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stock">
+                    <div class="case">
+                        <div class="header-case">
+                            <h2>Clients Fidèles</h2>
+
+                        </div>
+                        <div class="body-case">
+                            <div class="all-users">
+                                <div class="infos">
+                                    <img src="images/pp.jpg" width="30" height="30">
+                                    <div>
+                                        <h4>Omar</h4>
+                                        <small>Embulant</small>
+                                    </div>
+                                </div>
+
+                                <div class="user-contact">
+                                    <span class="fa fa-facebook"></span>
+                                    <span class="fa fa-whatsapp"></span>
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="all-users">
+                                <div class="infos">
+                                    <img src="images/pp.jpg" width="30" height="30">
+                                    <div>
+                                        <h4>Omar</h4>
+                                        <small>Embulant</small>
+                                    </div>
+                                </div>
+
+                                <div class="user-contact">
+                                    <span class="fa fa-facebook"></span>
+                                    <span class="fa fa-whatsapp"></span>
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                            </div>
+
+                            <div class="all-users">
+                                <div class="infos">
+                                    <img src="images/pp.jpg" width="30" height="30">
+                                    <div>
+                                        <h4>Omar</h4>
+                                        <small>Embulant</small>
+                                    </div>
+                                </div>
+
+                                <div class="user-contact">
+                                    <span class="fa fa-facebook"></span>
+                                    <span class="fa fa-whatsapp"></span>
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                            </div>
+
+
+                            <div class="all-users">
+                                <div class="infos">
+                                    <img src="images/pp.jpg" width="30" height="30">
+                                    <div>
+                                        <h4>Omar</h4>
+                                        <small>Embulant</small>
+                                    </div>
+                                </div>
+
+                                <div class="user-contact">
+                                    <span class="fa fa-facebook"></span>
+                                    <span class="fa fa-whatsapp"></span>
+                                    <span class="fa fa-phone"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn">voir plus<span class="fa fa-arrow-right"></span></button>
+                    </div>
+                </div>
+            </div> -->
+
+
+        </main>
+    </div>
+</body>
+
+</html>
